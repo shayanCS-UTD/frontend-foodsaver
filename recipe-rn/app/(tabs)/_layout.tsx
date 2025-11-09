@@ -11,11 +11,19 @@ export default function TabLayout() {
 
   return (
     <Tabs
+      initialRouteName="camera"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
         tabBarButton: HapticTab,
       }}>
+      <Tabs.Screen
+        name="camera"
+        options={{
+          title: 'Camera',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="camera.fill" color={color} />,
+        }}
+      />
       <Tabs.Screen
         name="index"
         options={{
