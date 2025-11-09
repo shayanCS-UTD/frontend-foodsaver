@@ -16,12 +16,21 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
+### Camera Feature
+
+This app includes a camera feature that works in **Expo Go**! After cloning and running `npm install`, you can:
+
+1. Run `npx expo start`
+2. Scan the QR code with Expo Go app
+3. The camera tab will open the native camera when you tap the button
+
+The camera feature uses `expo-image-picker` which is fully supported in Expo Go, so it works normally when scanning the QR code.
+
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
 - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
